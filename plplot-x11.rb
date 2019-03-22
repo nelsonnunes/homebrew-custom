@@ -34,7 +34,6 @@ class PlplotX11 < Formula
       -DENABLE_wxwidgets=OFF
       -DENABLE_DYNDRIVERS=OFF
       -DENABLE_java=OFF
-      #-DPLD_xwin=OFF
     ]
 
     mkdir "plplot-build" do

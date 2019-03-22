@@ -5,15 +5,9 @@ class PlplotX11 < Formula
   sha256 "331009037c9cad9fcefacd7dbe9c7cfae25e766f5590f9efd739a294c649df97"
   revision 1
 
-  bottle do
-    sha256 "d38e07c8b56d1f5eb392f655f2420eac9f6a8c4f94312499d17796c0f5e00e5b" => :mojave
-    sha256 "d912ca0e40535d001e8303b5b7e55306191c25f40aeb3e32469547f4feebb0a5" => :high_sierra
-    sha256 "d129f9e4341a5a0040cd0e7ecedfaf8d288269cbb423df89bf0e0ec559530131" => :sierra
-  end
-
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
-  depends_on "cairo"
+  depends_on "cairo-x11"
   depends_on "freetype"
   depends_on "gcc" # for gfortran
   depends_on "pango"

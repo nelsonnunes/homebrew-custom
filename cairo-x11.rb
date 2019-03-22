@@ -12,6 +12,7 @@ class CairoX11 < Formula
   end
 
   depends_on "pkg-config" => :build
+  depends_on :x11
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "glib"
@@ -30,7 +31,7 @@ class CairoX11 < Formula
                           "--enable-svg=yes",
                           "--enable-tee=yes",
                           "--enable-quartz-image",
-                          "--enable-xcb=yes",
+                          "--enable-xcb=no",
                           "--enable-xlib=yes",
                           "--enable-xlib-xrender=yes"
     system "make", "install"

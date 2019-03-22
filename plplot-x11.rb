@@ -1,4 +1,4 @@
-class Plplot < Formula
+class PlplotX11 < Formula
   desc "Cross-platform software package for creating scientific plots"
   homepage "https://plplot.sourceforge.io"
   url "https://downloads.sourceforge.net/project/plplot/plplot/5.14.0%20Source/plplot-5.14.0.tar.gz"

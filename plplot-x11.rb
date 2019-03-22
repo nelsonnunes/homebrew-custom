@@ -17,7 +17,7 @@ class PlplotX11 < Formula
   depends_on "freetype"
   depends_on "gcc" # for gfortran
   depends_on "pango"
-  depends_on "x11"
+  depends_on :x11
 
   def install
     args = std_cmake_args + %w[
